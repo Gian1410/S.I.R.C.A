@@ -1,0 +1,15 @@
+# Entornos y cachés de Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Secretos locales
+.env
+.env.*
+!.env.example
+
+# Archivos propios de Streamlit y sistema
+.streamlit/secrets.toml
+.DS_Store
+Thumbs.db

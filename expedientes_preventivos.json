@@ -1,0 +1,83 @@
+[
+  {
+    "id_cliente_hash": "25c6a74d7fb2",
+    "escenario_climatico": "El_Nino_Costero",
+    "modo_respaldo_usado": true,
+    "copiloto_riesgo_crediticio": {
+      "diagnostico_tecnico": "Amenaza física estimada: 1.00; probabilidad de estrés de liquidez: 100%. El riesgo combina exposición climática y fragilidad financiera; no constituye una causal de exclusión crediticia.",
+      "instrumento_financiero_sugerido": "Sin instrumento financiero automático; activar gestión preventiva y validación humana",
+      "monto_o_condicion_aplicable": "No corresponde preaprobar crédito ni gracia con la evidencia disponible. Pendiente: plan de adaptación y destino trazable aún no verificados; evaluación de capacidad de pago aún no verificada.",
+      "justificacion_normativa": "Política de Microcrédito Preventivo y Reprogramación Preventiva: exige evaluación individual, trazabilidad y capacidad de pago. Cláusula de Ética y No Exclusión: el riesgo climático no permite rechazar ni encarecer automáticamente.",
+      "requiere_visita_campo": true
+    },
+    "asesor_continuidad_operativa": {
+      "plan_accion_operativo": [
+        {
+          "accion": "Reparar surcos, cunetas y pequeños canales de drenaje antes de lluvias",
+          "costo_estimado_pen": 900.0,
+          "plazo_ejecucion_dias": 5
+        },
+        {
+          "accion": "Implementar riego por goteo básico y acolchado en área priorizada",
+          "costo_estimado_pen": 1800.0,
+          "plazo_ejecucion_dias": 7
+        }
+      ],
+      "mensaje_whatsapp_cliente": "Hola, ante el escenario de El Nino Costero, recomendamos empezar por: reparar surcos, cunetas y pequeños canales de drenaje antes de lluvias. Costo referencial S/ 900 y plazo 5 días. Podemos coordinar una visita preventiva para revisar tu negocio y alternativas de apoyo."
+    }
+  },
+  {
+    "id_cliente_hash": "36662c2c1d57",
+    "escenario_climatico": "El_Nino_Costero",
+    "modo_respaldo_usado": true,
+    "copiloto_riesgo_crediticio": {
+      "diagnostico_tecnico": "Amenaza física estimada: 1.00; probabilidad de estrés de liquidez: 100%. El riesgo combina exposición climática y fragilidad financiera; no constituye una causal de exclusión crediticia.",
+      "instrumento_financiero_sugerido": "Sin instrumento financiero automático; activar gestión preventiva y validación humana",
+      "monto_o_condicion_aplicable": "No corresponde preaprobar crédito ni gracia con la evidencia disponible. Pendiente: plan de adaptación y destino trazable aún no verificados; evaluación de capacidad de pago aún no verificada.",
+      "justificacion_normativa": "Política de Microcrédito Preventivo y Reprogramación Preventiva: exige evaluación individual, trazabilidad y capacidad de pago. Cláusula de Ética y No Exclusión: el riesgo climático no permite rechazar ni encarecer automáticamente.",
+      "requiere_visita_campo": true
+    },
+    "asesor_continuidad_operativa": {
+      "plan_accion_operativo": [
+        {
+          "accion": "Elevar insumos y refrigeradoras críticas, con contenedores herméticos",
+          "costo_estimado_pen": 980.0,
+          "plazo_ejecucion_dias": 2
+        },
+        {
+          "accion": "Instalar tanque de reserva con filtro básico para higiene y operación",
+          "costo_estimado_pen": 1200.0,
+          "plazo_ejecucion_dias": 3
+        }
+      ],
+      "mensaje_whatsapp_cliente": "Hola, ante el escenario de El Nino Costero, recomendamos empezar por: elevar insumos y refrigeradoras críticas, con contenedores herméticos. Costo referencial S/ 980 y plazo 2 días. Podemos coordinar una visita preventiva para revisar tu negocio y alternativas de apoyo."
+    }
+  },
+  {
+    "id_cliente_hash": "a7eefc8bebd4",
+    "escenario_climatico": "El_Nino_Costero",
+    "modo_respaldo_usado": true,
+    "copiloto_riesgo_crediticio": {
+      "diagnostico_tecnico": "Amenaza física estimada: 0.69; probabilidad de estrés de liquidez: 100%. El riesgo combina exposición climática y fragilidad financiera; no constituye una causal de exclusión crediticia.",
+      "instrumento_financiero_sugerido": "Sin instrumento financiero automático; activar gestión preventiva y validación humana",
+      "monto_o_condicion_aplicable": "No corresponde preaprobar crédito ni gracia con la evidencia disponible. Pendiente: plan de adaptación y destino trazable aún no verificados; evaluación de capacidad de pago aún no verificada.",
+      "justificacion_normativa": "Política de Microcrédito Preventivo y Reprogramación Preventiva: exige evaluación individual, trazabilidad y capacidad de pago. Cláusula de Ética y No Exclusión: el riesgo climático no permite rechazar ni encarecer automáticamente.",
+      "requiere_visita_campo": true
+    },
+    "asesor_continuidad_operativa": {
+      "plan_accion_operativo": [
+        {
+          "accion": "Reparar surcos, cunetas y pequeños canales de drenaje antes de lluvias",
+          "costo_estimado_pen": 900.0,
+          "plazo_ejecucion_dias": 5
+        },
+        {
+          "accion": "Implementar riego por goteo básico y acolchado en área priorizada",
+          "costo_estimado_pen": 1800.0,
+          "plazo_ejecucion_dias": 7
+        }
+      ],
+      "mensaje_whatsapp_cliente": "Hola, ante el escenario de El Nino Costero, recomendamos empezar por: reparar surcos, cunetas y pequeños canales de drenaje antes de lluvias. Costo referencial S/ 900 y plazo 5 días. Podemos coordinar una visita preventiva para revisar tu negocio y alternativas de apoyo."
+    }
+  }
+]

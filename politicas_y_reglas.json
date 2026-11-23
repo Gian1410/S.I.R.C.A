@@ -1,0 +1,93 @@
+{
+  "version": "1.0",
+  "proposito": "Base de conocimiento preventiva para el MVP de resiliencia climática de Caja Trujillo. No sustituye las políticas crediticias, regulatorias ni la evaluación humana vigente.",
+  "matriz_sensibilidad_sectorial": {
+    "Bodega y Abarrotes": {
+      "lluvias_inundaciones": {"peso": 0.75, "justificacion": "La inundación puede contaminar o destruir alimentos, afectar equipos de frío y bloquear el abastecimiento de corta rotación."},
+      "sequia_estres_hidrico": {"peso": 0.35, "justificacion": "El impacto es indirecto, mediante mayor precio y menor disponibilidad de alimentos, bebidas y productos de proveedores agrícolas."}
+    },
+    "Fabricación de Calzado": {
+      "lluvias_inundaciones": {"peso": 0.65, "justificacion": "Humedad e ingreso de agua deterioran cuero, adhesivos, hormas y maquinaria; además pueden interrumpir talleres y distribución."},
+      "sequia_estres_hidrico": {"peso": 0.25, "justificacion": "La dependencia hídrica directa suele ser baja; el efecto principal llega por costos de insumos y energía."}
+    },
+    "Agricultura Estacional": {
+      "lluvias_inundaciones": {"peso": 0.85, "justificacion": "Lluvias intensas y desbordes dañan cultivos, suelos, caminos de saca, riego y cosecha."},
+      "sequia_estres_hidrico": {"peso": 1.0, "justificacion": "La falta de agua compromete rendimiento, calidad y continuidad de la campaña, por lo que impacta directamente el flujo de caja."}
+    },
+    "Taller Mecánico/Metalmecánica": {
+      "lluvias_inundaciones": {"peso": 0.7, "justificacion": "El agua puede dañar herramientas, equipos eléctricos y vehículos en reparación, además de impedir el acceso al taller."},
+      "sequia_estres_hidrico": {"peso": 0.2, "justificacion": "La exposición directa es limitada, salvo restricciones de agua para limpieza, enfriamiento o procesos específicos."}
+    },
+    "Restaurante y Alimentos": {
+      "lluvias_inundaciones": {"peso": 0.9, "justificacion": "Inventarios altamente perecibles, equipos de refrigeración y condiciones sanitarias son vulnerables a agua, cortes eléctricos y menor afluencia."},
+      "sequia_estres_hidrico": {"peso": 0.6, "justificacion": "El estrés hídrico restringe higiene y preparación, y eleva el costo de insumos agrícolas y agua."}
+    },
+    "Comercio Textil": {
+      "lluvias_inundaciones": {"peso": 0.55, "justificacion": "La humedad y el agua deterioran mercadería y reducen ventas por cierre de mercados y vías interrumpidas."},
+      "sequia_estres_hidrico": {"peso": 0.2, "justificacion": "El efecto suele ser indirecto por menor demanda local o mayores costos en la cadena textil."}
+    }
+  },
+  "politicas_riesgo_caja_trujillo": {
+    "microcredito_preventivo_adaptacion": {
+      "objetivo": "Financiar medidas verificables que reduzcan la interrupción operativa o pérdida de activos frente a amenazas climáticas.",
+      "elegibilidad": [
+        "Cliente con crédito vigente o solicitud evaluada bajo las políticas crediticias ordinarias y con identidad verificada por los canales institucionales.",
+        "Amenaza base igual o superior a 0.55, o alerta climática oficial aplicable a la zona de operación.",
+        "Plan de adaptación simple con presupuesto, destino trazable y evidencia posterior de compra o ejecución.",
+        "Días de atraso actual no mayores a 15 y evaluación de capacidad de pago que no resulte en sobreendeudamiento."
+      ],
+      "monto_maximo_pen": 12000,
+      "limite_adicional": "El monto no debe superar el menor entre S/ 12,000 y 30% del saldo de capital vigente; para nuevos clientes se aplica el menor entre S/ 12,000 y 20% de ventas mensuales verificadas.",
+      "tasa_preferencial": "Hasta 300 puntos básicos por debajo de la tasa vigente comparable, respetando tasas mínimas, costos y normativa aplicable.",
+      "plazo_maximo_meses": 24,
+      "destinos_permitidos": ["protección física del local o parcela", "drenaje y elevación de inventario", "almacenamiento seguro de agua", "riego eficiente", "mantenimiento preventivo de equipos", "capital de trabajo estrictamente asociado a continuidad post-alerta"],
+      "destinos_no_permitidos": ["consumo personal no vinculado al negocio", "refinanciar deuda vencida", "inversiones sin evidencia de reducción de vulnerabilidad"]
+    },
+    "reprogramacion_preventiva_periodo_gracia": {
+      "principio": "Medida temporal de continuidad previa al evento, otorgada tras evaluación individual; no equivale a condonación ni se activa automáticamente.",
+      "condiciones_de_activacion": [
+        "Alerta climática de confianza media o alta para el distrito/zona de referencia y amenaza base igual o superior a 0.60.",
+        "Evidencia de posible interrupción de ingresos, abastecimiento, cosecha o acceso al establecimiento durante la ventana de alerta.",
+        "Cliente sin atraso mayor a 15 días al momento de la evaluación, o caso excepcional documentado y aprobado por el nivel facultado.",
+        "Análisis de flujo de caja que sustente que el ajuste previene mora evitable y preserva la viabilidad del negocio."
+      ],
+      "opciones": ["diferir una cuota", "extender plazo dentro de límites regulatorios e internos", "periodo de gracia parcial de capital de hasta 60 días", "recalendarizar pago según ciclo agrícola documentado"],
+      "controles_auditables": ["registrar alerta, fuente, fecha, analista y fundamento", "conservar evaluación de capacidad de pago previa y posterior", "revisar resultado a los 30, 60 y 90 días"]
+    },
+    "etica_y_no_exclusion": {
+      "clausula": "Está prohibido rechazar, encarecer automáticamente o degradar una solicitud de crédito únicamente por el índice de riesgo climático, coordenadas, zona de referencia o alerta asociada. El índice se utiliza exclusivamente para prevención, orientación, priorización de apoyo y continuidad operativa.",
+      "salvaguardas": ["Toda decisión crediticia adversa requiere fundamento individual, trazable y revisión humana conforme a política vigente.", "No se emplean nombres, DNI ni atributos sensibles en el motor de alerta.", "Las recomendaciones deben explicar los factores observados, su incertidumbre y las alternativas preventivas disponibles."]
+    }
+  },
+  "catalogo_acciones_preventivas": {
+    "Bodega y Abarrotes": [
+      {"accion": "Elevar inventario y equipos críticos sobre tarimas plásticas o metálicas", "amenaza": "lluvias_inundaciones", "costo_estimado_pen": 450, "tiempo_ejecucion_dias": 2},
+      {"accion": "Instalar canaletas, sellos inferiores y barrera removible en acceso", "amenaza": "lluvias_inundaciones", "costo_estimado_pen": 750, "tiempo_ejecucion_dias": 3}
+    ],
+    "Fabricación de Calzado": [
+      {"accion": "Guardar cuero, adhesivos y producto terminado en estanterías elevadas con cobertores", "amenaza": "lluvias_inundaciones", "costo_estimado_pen": 680, "tiempo_ejecucion_dias": 2},
+      {"accion": "Sellar filtraciones y proteger tableros eléctricos con cubierta y elevación", "amenaza": "lluvias_inundaciones", "costo_estimado_pen": 950, "tiempo_ejecucion_dias": 4}
+    ],
+    "Agricultura Estacional": [
+      {"accion": "Reparar surcos, cunetas y pequeños canales de drenaje antes de lluvias", "amenaza": "lluvias_inundaciones", "costo_estimado_pen": 900, "tiempo_ejecucion_dias": 5},
+      {"accion": "Implementar riego por goteo básico y acolchado en área priorizada", "amenaza": "sequia_estres_hidrico", "costo_estimado_pen": 1800, "tiempo_ejecucion_dias": 7}
+    ],
+    "Taller Mecánico/Metalmecánica": [
+      {"accion": "Elevar herramientas eléctricas y protegerlas en gabinetes impermeables", "amenaza": "lluvias_inundaciones", "costo_estimado_pen": 850, "tiempo_ejecucion_dias": 3},
+      {"accion": "Limpiar drenajes y colocar pendiente o barrera removible en el ingreso", "amenaza": "lluvias_inundaciones", "costo_estimado_pen": 700, "tiempo_ejecucion_dias": 3}
+    ],
+    "Restaurante y Alimentos": [
+      {"accion": "Elevar insumos y refrigeradoras críticas, con contenedores herméticos", "amenaza": "lluvias_inundaciones", "costo_estimado_pen": 980, "tiempo_ejecucion_dias": 2},
+      {"accion": "Instalar tanque de reserva con filtro básico para higiene y operación", "amenaza": "sequia_estres_hidrico", "costo_estimado_pen": 1200, "tiempo_ejecucion_dias": 3}
+    ],
+    "Comercio Textil": [
+      {"accion": "Usar estanterías elevadas y fundas impermeables reutilizables para mercadería", "amenaza": "lluvias_inundaciones", "costo_estimado_pen": 620, "tiempo_ejecucion_dias": 2},
+      {"accion": "Sellar techo y acceso del puesto/local con lona y burletes", "amenaza": "lluvias_inundaciones", "costo_estimado_pen": 480, "tiempo_ejecucion_dias": 2}
+    ]
+  },
+  "niveles_incertidumbre": {
+    "baja": {"rango_confianza": "< 50%", "intervenciones_permitidas": ["mensajes educativos no urgentes", "autodiagnóstico voluntario", "difusión de catálogo preventivo"], "intervenciones_no_permitidas": ["oferta proactiva de reprogramación", "modificación de calendario de pagos basada solo en la alerta"]},
+    "media": {"rango_confianza": "50%-75%", "intervenciones_permitidas": ["contacto preventivo y verificación de exposición", "visita o evaluación remota priorizada", "preaprobación condicionada de microcrédito preventivo", "propuesta de reprogramación sujeta a evaluación individual"], "intervenciones_no_permitidas": ["activación automática de gracia o desembolso sin validación"]},
+    "alta": {"rango_confianza": "> 75%", "intervenciones_permitidas": ["priorización de contacto a clientes expuestos", "evaluación acelerada de microcrédito preventivo", "reprogramación preventiva o gracia tras evaluación documentada", "coordinación de seguimiento post-evento"], "intervenciones_no_permitidas": ["rechazo automático de crédito", "cambio automático de precio o condiciones por riesgo climático"]}
+  }
+}
